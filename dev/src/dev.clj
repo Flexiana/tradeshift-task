@@ -8,6 +8,7 @@
     [duct.core :as duct]
     [duct.core.repl :as duct-repl]
     [eftest.runner :as eftest]
+    [figwheel-sidecar.repl-api :as figwheel-repl]
     [integrant.core :as ig]
     [integrant.repl :refer [clear halt go init prep reset]]
     [integrant.repl.state :refer [config system]]))

@@ -9,6 +9,7 @@ logs/
 dev/resources/local.edn
 dev/src/clj/local.clj
 tmp/
+resources/tradeshift_task/public/js/
 
 # IDE
 *.swp
