@@ -1,0 +1,14 @@
+{:duct.core/project-ns tradeshift-task
+ :duct.core/environment :production
+
+ :duct.module/logging
+ {}
+
+ :duct.module.web/site
+ {}
+
+ :tradeshift-task.handler/site
+ {:routes #ig/ref :duct.router/routes}
+
+ :duct.module/bidi
+ [{"/" {:get :site/index}}]}

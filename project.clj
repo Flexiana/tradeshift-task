@@ -8,7 +8,6 @@
                  [duct/core "0.6.2"]
                  [duct/module.logging "0.3.1"]
                  [duct/module.web "0.6.4"]
-                 [duct/module.sql "0.4.2"]
                  [duct.module.bidi "0.5.0"]
 
                  ;; HTTP
@@ -24,7 +23,8 @@
   :uberjar {:aot :all}
   :resource-paths ["resources" "target/resources"]
   :prep-tasks ["javac" "compile" ["run" ":duct/compiler"]]
-  :eastwood {:source-paths ["src"]}
+  :source-paths ["src/clj" "src/cljc"]
+  :eastwood {:source-paths ["src/clj" "src/cljc"]}
   :profiles
   {:dev [:project/dev :profiles/dev]
    :repl {:prep-tasks ^:replace ["javac" "compile"]
